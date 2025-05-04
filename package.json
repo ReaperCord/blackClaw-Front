@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ReaperCord.github.io/demoRepo",
+  "homepage": "https://github.com/ReaperCord/blackClaw-Front",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
