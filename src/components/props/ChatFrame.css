@@ -1,0 +1,142 @@
+.frame-body {
+    width: 90dvw;
+    max-width: 900px; /* Limita a largura no PC */
+    height: 70vh; /* Ajusta a altura para 90% da altura da tela */
+    min-height: fit-content;
+    
+    display: flex;
+    flex-direction: column;
+    
+    margin: auto;
+    padding: 16px;
+    
+    box-sizing: border-box;
+    border-radius: 8px;
+    
+    background-color: #ffffff05;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adicionando sombra suave */
+}
+
+.ask-bar{
+    width: auto;
+    height: fit-content;
+    
+    background-color: #2C2B2B;
+    
+    box-sizing: border-box;
+    border: solid #bebebe2a 0.25px;
+    border-radius: 6px;
+    
+    padding: 8px;
+    
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #8b8b8b;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.conversation {
+    width: 100%;
+    height: calc(100% - 56px); /* Ajusta a altura da conversa */
+    
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 4px;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.conversation::-webkit-scrollbar {
+    width: 6px;
+}
+
+.conversation::-webkit-scrollbar-track {
+    background-color: #2C2B2B;
+    border-radius: 3px;
+}
+
+.conversation::-webkit-scrollbar-thumb {
+    width: 4px;
+    background-color: #8b8b8b;
+    border-radius: 2px;
+}
+
+.text-area{
+    width: 100%;
+    max-width: 800px; /* Limitando a largura da área de texto */
+    height: auto;
+    
+    box-sizing: border-box;
+    border: none;
+    
+    background-color: #2C2B2B;
+    
+    font-family: sans-serif;
+    
+    padding: 8px;
+    
+    resize: none;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.button-send {
+    width: 40px;
+    height: 40px;
+
+    background-color: #fff;
+    color: #2C2B2B;
+    font-size: 22px;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 2px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Media Queries para dispositivos móveis e tablet */
+
+@media (max-width: 768px) {
+    .frame-body {
+        padding: 12px;
+        max-width: 90%; /* Ajuste para telas pequenas */
+    }
+
+    .ask-bar {
+        font-size: 14px;
+    }
+
+    .text-area {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .frame-body {
+        padding: 8px;
+        max-width: 100%;
+    }
+
+    .ask-bar {
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    .text-area {
+        font-size: 12px;
+        padding: 4px;
+    }
+}

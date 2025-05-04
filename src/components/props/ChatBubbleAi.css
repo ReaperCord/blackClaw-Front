@@ -1,0 +1,40 @@
+.bubble-text-ai {
+    width: 60%;
+    height: auto;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-align: left;
+    background-color: #262c41;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.loading-dots {
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+}
+
+.loading-dots span {
+    animation: blink 1.4s infinite both;
+    font-size: 1.2em;
+    margin: 0 2px;
+}
+
+.loading-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loading-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes blink {
+    0% { opacity: 0.2; }
+    20% { opacity: 1; }
+    100% { opacity: 0.2; }
+}

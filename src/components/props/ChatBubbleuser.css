@@ -1,0 +1,17 @@
+.bubble-text-user {
+    width: fit-content;
+    max-width: 60%;
+    height: auto;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-align: left;
+    color: #fff;
+    background-color: #9A9A9A;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 8px;
+    padding: 8px;
+    align-self: flex-end;
+}
